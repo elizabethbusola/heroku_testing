@@ -12,7 +12,7 @@ import joblib
 app = FastAPI()
 
 Encode = joblib.load(open('predictHousePricesEncode.pkl', 'rb'))
-Scaler = joblib.load(open('predictHousePricesScaler.pkl', 'rb'))
+Scaler = joblib.load(open('PredictHousePricesScaler.pkl', 'rb'))
 Ensemble = joblib.load(open('predictHousePricesEnsemble.pkl', 'rb'))
 
 @app.get('/')
